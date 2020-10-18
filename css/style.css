@@ -1,0 +1,355 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 1280px){
+/* Style voor de body met eens schermgrootte boven de 1280px */
+body {
+	width: 1000px;
+	margin: auto;
+	background-color: #E8FFFF;
+}
+
+/* Dit is de flex-box van de body, hierin komt alle content te staan*/
+#body-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Individuele opmaak voor het logo, de headers en de navigatiebalk*/
+.logo-Website {
+	background-color: Red;
+}
+
+.website-Title {
+	background-color: Blue;
+}
+
+.website-Statement {
+	background-color: grey;
+}
+
+.website-Navigatie {
+	background-color: purple;
+}
+
+
+/* Style voor de layout van het logo, de headers en de navigatie, deze zitten in een flexbox*/
+#logo-Website-Home {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 1;
+}
+
+#home-Title {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 2;
+}
+
+#home-Statement {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 3;
+}
+
+#home-Navigatie {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 4;
+}
+
+#home-Video {
+	flex-basis: 100%;
+	flex-grow: ;
+	flex-shrink: ;
+	order: 5;
+}
+
+
+
+/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, de artikelen hebben een breedte van 70%, de aside neemt de rest*/
+#home-Aside {
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 7;
+	background-color: blue;
+}
+
+#article-flex {
+	flex-basis: 70%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 6;
+}
+
+#home-Article1 {
+	background-color: black;
+}
+
+#home-Article2 {
+	background-color: green;
+}
+
+#home-Article3 {
+	background-color: pink;
+}
+
+
+
+/* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
+#cookie-flex {
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 9;
+	background-color: white;
+}
+
+#footer {
+	flex-basis: 70%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 8;
+	background-color: orange;
+}}
+
+@media screen and (max-width: 1279px){
+	/* Style voor de body met eens schermgrootte onder de 1180 px */
+body {
+	width: 480px;
+	margin: auto;
+	background-color: #E8FFFF;
+}
+
+/* Dit is de flex-box van de body, hierin komt alle content te staan*/
+#body-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Individuele opmaak voor het logo, de headers en de navigatiebalk*/
+.logo-Website {
+	background-color: Red;
+}
+
+.website-Title {
+	background-color: Blue;
+}
+
+.website-Statement {
+	background-color: grey;
+}
+
+.website-Navigatie {
+	background-color: purple;
+}
+
+
+/* Style voor de layout van het logo, de headers en de navigatie, deze zitten in een flexbox*/
+#logo-Website-Home {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 1;
+}
+
+#home-Title {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 2;
+}
+
+#home-Statement {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 3;
+}
+
+#home-Navigatie {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 4;
+}
+
+#home-Video {
+	flex-basis: 100%;
+	flex-grow: ;
+	flex-shrink: ;
+	order: 6;
+}
+
+
+
+/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, de artikelen hebben een breedte van 70%, de aside neemt de rest*/
+#home-Aside {
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 5;
+	background-color: blue;
+}
+
+#article-flex {
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 7;
+}
+
+#home-Article1 {
+	background-color: black;
+}
+
+#home-Article2 {
+	background-color: green;
+}
+
+#home-Article3 {
+	background-color: pink;
+}
+
+
+
+/* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
+#cookie-flex {
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 9;
+	background-color: white;
+}
+
+#footer {
+	flex-basis: 70%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 8;
+	background-color: orange;
+}}
+
+@media screen and (max-width: 680px){
+	/* Style voor de body met eens schermgrootte onder de 480px */
+body {
+	width: 200px;
+	margin: auto;
+	background-color: #E8FFFF; 
+}
+
+/* Dit is de flex-box van de body, hierin komt alle content te staan*/
+#body-flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+/* Individuele opmaak voor het logo, de headers en de navigatiebalk*/
+.logo-Website {
+	background-color: Red;
+}
+
+.website-Title {
+	background-color: Blue;
+}
+
+.website-Statement {
+	background-color: grey;
+}
+
+.website-Navigatie {
+	background-color: purple;
+}
+
+
+/* Style voor de layout van het logo, de headers en de navigatie, deze zitten in een flexbox*/
+#logo-Website-Home {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 1;
+}
+
+#home-Title {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 2;
+}
+
+#home-Statement {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 3;
+}
+
+#home-Video {
+	order: 5;
+	display: none;
+}
+
+#home-Navigatie {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 4;
+}
+
+
+
+/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, de artikelen hebben een breedte van 70%, de aside neemt de rest*/
+#home-Aside {
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 6;
+	background-color: blue;
+}
+
+#article-flex {
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 7;
+}
+
+#home-Article1 {
+	background-color: black;
+}
+
+#home-Article2 {
+	background-color: green;
+}
+
+#home-Article3 {
+	background-color: pink;
+}
+
+
+
+/* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
+#cookie-flex {
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 9;
+	background-color: white;
+}
+
+#footer {
+	flex-basis: 70%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 8;
+	background-color: orange;
+}}
