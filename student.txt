@@ -1,0 +1,4 @@
+Student name: Bram Terlouw
+Student number: 614992
+Student class: INFA2
+URL student GitHub repository: https://github.com/BramTerlouw/Webassesment  
