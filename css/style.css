@@ -181,7 +181,6 @@ ol{
 
 .img-Articles {
 	width: 100px;
-	heigth: 50px;
 	float: right;
 	position: relative;
 	margin: 5px;
@@ -223,7 +222,7 @@ onderaan de pagina, de cookie statement is een flexbox*/
 @media screen and (max-width: 1279px){
 	/* Style voor de body met eens schermgrootte onder de 1180 px */
 body {
-	width: 600px;
+	width: 500px;
 	margin: auto;
 	background-color: #7da1d4;
 }
@@ -396,7 +395,6 @@ ol{
 
 .img-Articles {
 	width: 100px;
-	heigth: 50px;
 	float: right;
 	position: relative;
 	margin: 5px;
@@ -432,12 +430,12 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	
 }}
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 600px){
 	/* Style voor de body met eens schermgrootte onder de 480px */
 body {
 	width: 200px;
 	margin: auto;
-	background-color: #E8FFFF; 
+	background-color: #7da1d4; 
 }
 
 /* Dit is de flex-box van de body, hierin komt alle content te staan*/
@@ -564,7 +562,6 @@ ol{
 
 .img-Articles {
 	width: 100px;
-	heigth: 50px;
 	float: right;
 	position: relative;
 	margin: 5px;
