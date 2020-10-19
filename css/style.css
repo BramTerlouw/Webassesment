@@ -4,12 +4,14 @@
 	box-sizing: border-box;
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
 @media screen and (min-width: 1280px){
 /* Style voor de body met eens schermgrootte boven de 1280px */
 body {
 	width: 1000px;
 	margin: auto;
-	background-color: #E8FFFF;
+	background-color: #7da1d4;
 }
 
 /* Dit is de flex-box van de body, hierin komt alle content te staan*/
@@ -18,25 +20,64 @@ body {
 	flex-wrap: wrap;
 }
 
-/* Individuele opmaak voor het logo, de headers en de navigatiebalk*/
+/* Individuele opmaak voor het logo, de headers*/
 .logo-Website {
-	background-color: Red;
+	background-color: #eff9fe;
 }
 
 .website-Title {
-	background-color: Blue;
+	padding: 5px;
+	background-color: #eff9fe;
+	color: #161240;
+	border-left: 2px solid #161240;
+	border-top: 2px solid #161240;
+	border-right: 2px solid #161240;
 }
 
 .website-Statement {
-	background-color: grey;
+	background-color: #eff9fe;
+	color: #161240;
+	border-left: 2px solid #161240;
+	border-right: 2px solid #161240;
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style de Navigatie balk */
 .website-Navigatie {
-	background-color: purple;
+	background-color: #161240;
 }
 
+ul {
+	list-style-type: none;
+	overflow: hidden;
+}
 
-/* Style voor de layout van het logo, de headers en de navigatie, deze zitten in een flexbox*/
+li {
+	float: left;
+	background-color: #161240;
+	color: white;
+}
+
+li a {
+	display: block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: yellow;
+}
+
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de layout van het logo, de headers en 
+de navigatie, deze zitten in een flexbox*/
+#home-Header {
+	width: 100%;
+}
+
 #logo-Website-Home {
 	flex-basis: 100%;
 	flex-grow: 1;
@@ -70,19 +111,44 @@ body {
 	flex-grow: ;
 	flex-shrink: ;
 	order: 5;
+	border: 1px solid black;
+	margin: 5px;
 }
 
 
-
-/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, de artikelen hebben een breedte van 70%, de aside neemt de rest*/
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, 
+de artikelen hebben een breedte van 70%, de aside neemt de rest*/
 #home-Aside {
 	flex-basis: 30%;
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 7;
-	background-color: blue;
+	background-color: #161240;
+	border-radius: 5px;
+	padding: 10px;
 }
 
+#aside-Header {
+	color: yellow;
+}
+
+ol{
+	padding: 15px;
+	background-color: #161240;
+}
+
+.aside-li {
+	color: yellow;
+	width: 100%;
+	background-color: #161240;
+	list-style-type: dotted;
+}
+
+
+/* ====================================================================== */
+/* ====================================================================== */
 #article-flex {
 	flex-basis: 70%;
 	flex-grow: 0;
@@ -90,27 +156,52 @@ body {
 	order: 6;
 }
 
+#home-Article1, #home-Article2, #home-Article3 {
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
 #home-Article1 {
-	background-color: black;
+	background-color: #eff9fe;
 }
 
 #home-Article2 {
-	background-color: green;
+	background-color: #eff9fe;
 }
 
 #home-Article3 {
-	background-color: pink;
+	background-color: #eff9fe;
 }
 
+.article-text {
+	margin: 5px;
+}
 
+.img-Articles {
+	width: 100px;
+	heigth: 50px;
+	float: right;
+	position: relative;
+	margin: 5px;
+	border: 1px solid #161240;
+	border-radius: 5px;
+}
 
-/* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de cookie statement en de footer, deze bevinden zich 
+onderaan de pagina, de cookie statement is een flexbox*/
 #cookie-flex {
 	flex-basis: 30%;
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 9;
-	background-color: white;
+	margin-top: 5px;
+	padding: 15px;
+	background-color: #eff9fe;
+	opacity: 50%;
 }
 
 #footer {
@@ -118,15 +209,23 @@ body {
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 8;
-	background-color: orange;
+	margin-top: 5px;
+	color: yellow;
+	background-color: #161240;
+	height: 50px;
+	padding: 15px;
+	
 }}
 
+
+/* ====================================================================== */
+/* ====================================================================== */
 @media screen and (max-width: 1279px){
 	/* Style voor de body met eens schermgrootte onder de 1180 px */
 body {
-	width: 480px;
+	width: 600px;
 	margin: auto;
-	background-color: #E8FFFF;
+	background-color: #7da1d4;
 }
 
 /* Dit is de flex-box van de body, hierin komt alle content te staan*/
@@ -135,25 +234,64 @@ body {
 	flex-wrap: wrap;
 }
 
-/* Individuele opmaak voor het logo, de headers en de navigatiebalk*/
+/* Individuele opmaak voor het logo, de headers*/
 .logo-Website {
-	background-color: Red;
+	background-color: #eff9fe;
 }
 
 .website-Title {
-	background-color: Blue;
+	padding: 5px;
+	background-color: #eff9fe;
+	color: #161240;
+	border-left: 2px solid #161240;
+	border-top: 2px solid #161240;
+	border-right: 2px solid #161240;
 }
 
 .website-Statement {
-	background-color: grey;
+	background-color: #eff9fe;
+	color: #161240;
+	border-left: 2px solid #161240;
+	border-right: 2px solid #161240;
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style de Navigatie balk */
 .website-Navigatie {
-	background-color: purple;
+	background-color: #161240;
 }
 
+ul {
+	list-style-type: none;
+	overflow: hidden;
+}
 
-/* Style voor de layout van het logo, de headers en de navigatie, deze zitten in een flexbox*/
+li {
+	float: left;
+	background-color: #161240;
+	color: white;
+}
+
+li a {
+	display: block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: yellow;
+}
+
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de layout van het logo, de headers en 
+de navigatie, deze zitten in een flexbox*/
+#home-Header {
+	width: 100%;
+}
+
 #logo-Website-Home {
 	flex-basis: 100%;
 	flex-grow: 1;
@@ -186,20 +324,45 @@ body {
 	flex-basis: 100%;
 	flex-grow: ;
 	flex-shrink: ;
-	order: 6;
+	order: 5;
+	border: 1px solid black;
+	margin: 5px;
 }
 
 
-
-/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, de artikelen hebben een breedte van 70%, de aside neemt de rest*/
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, 
+de artikelen hebben een breedte van 70%, de aside neemt de rest*/
 #home-Aside {
 	flex-basis: 100%;
 	flex-grow: 0;
 	flex-shrink: 0;
-	order: 5;
-	background-color: blue;
+	order: 6;
+	background-color: #161240;
+	border-radius: 5px;
+	padding: 10px;
 }
 
+#aside-Header {
+	color: yellow;
+}
+
+ol{
+	padding: 15px;
+	background-color: #161240;
+}
+
+.aside-li {
+	color: yellow;
+	width: 100%;
+	background-color: #161240;
+	list-style-type: dotted;
+}
+
+
+/* ====================================================================== */
+/* ====================================================================== */
 #article-flex {
 	flex-basis: 100%;
 	flex-grow: 0;
@@ -207,27 +370,53 @@ body {
 	order: 7;
 }
 
+#home-Article1, #home-Article2, #home-Article3 {
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
 #home-Article1 {
-	background-color: black;
+	background-color: #eff9fe;
 }
 
 #home-Article2 {
-	background-color: green;
+	background-color: #eff9fe;
 }
 
 #home-Article3 {
-	background-color: pink;
+	background-color: #eff9fe;
 }
 
+.article-text {
+	margin: 5px;
+	font-size: 0.75em;
+}
 
+.img-Articles {
+	width: 100px;
+	heigth: 50px;
+	float: right;
+	position: relative;
+	margin: 5px;
+	border: 1px solid #161240;
+	border-radius: 5px;
+}
 
-/* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de cookie statement en de footer, deze bevinden zich 
+onderaan de pagina, de cookie statement is een flexbox*/
 #cookie-flex {
 	flex-basis: 30%;
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 9;
-	background-color: white;
+	margin-top: 5px;
+	padding: 15px;
+	background-color: #eff9fe;
+	opacity: 50%;
 }
 
 #footer {
@@ -235,7 +424,12 @@ body {
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 8;
-	background-color: orange;
+	margin-top: 5px;
+	color: yellow;
+	background-color: #161240;
+	height: 50px;
+	padding: 15px;
+	
 }}
 
 @media screen and (max-width: 680px){
@@ -313,8 +507,29 @@ body {
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 6;
-	background-color: blue;
+	background-color: #161240;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 0.6em;
+	margin-top: 5px;
 }
+
+#aside-Header {
+	color: yellow;
+}
+
+ol{
+	padding: 15px;
+	background-color: #161240;
+}
+
+.aside-li {
+	color: yellow;
+	width: 100%;
+	background-color: #161240;
+	list-style-type: dotted;
+}
+
 
 #article-flex {
 	flex-basis: 100%;
@@ -323,33 +538,65 @@ body {
 	order: 7;
 }
 
+#home-Article1, #home-Article2, #home-Article3 {
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
 #home-Article1 {
-	background-color: black;
+	background-color: #eff9fe;
 }
 
 #home-Article2 {
-	background-color: green;
+	background-color: #eff9fe;
 }
 
 #home-Article3 {
-	background-color: pink;
+	background-color: #eff9fe;
+}
+
+.article-text {
+	margin: 5px;
+	font-size: 0.5em;
+}
+
+.img-Articles {
+	width: 100px;
+	heigth: 50px;
+	float: right;
+	position: relative;
+	margin: 5px;
+	border: 1px solid #161240;
+	border-radius: 5px;
 }
 
 
 
 /* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
 #cookie-flex {
-	flex-basis: 30%;
+	flex-basis: 40%;
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 9;
-	background-color: white;
+	margin-top: 5px;
+	padding: 15px;
+	background-color: #eff9fe;
+	opacity: 50%;
+	font-size: 0.5em;
 }
 
 #footer {
-	flex-basis: 70%;
+	flex-basis: 60%;
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 8;
-	background-color: orange;
+	margin-top: 5px;
+	color: yellow;
+	background-color: #161240;
+	height: 50px;
+	padding: 15px;
+	font-size: 0.5em;
+	
 }}
