@@ -217,6 +217,10 @@ onderaan de pagina, de cookie statement is een flexbox*/
 }}
 
 
+
+
+
+
 /* ====================================================================== */
 /* ====================================================================== */
 @media screen and (max-width: 1279px){
@@ -227,6 +231,8 @@ body {
 	background-color: #7da1d4;
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
 /* Dit is de flex-box van de body, hierin komt alle content te staan*/
 #body-flex {
 	display: flex;
@@ -395,7 +401,7 @@ ol{
 
 .img-Articles {
 	width: 100px;
-	float: right;
+	float: left;
 	position: relative;
 	margin: 5px;
 	border: 1px solid #161240;
@@ -430,6 +436,13 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	
 }}
 
+
+
+
+
+
+/* ====================================================================== */
+/* ====================================================================== */
 @media screen and (max-width: 600px){
 	/* Style voor de body met eens schermgrootte onder de 480px */
 body {
@@ -438,6 +451,8 @@ body {
 	background-color: #7da1d4; 
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
 /* Dit is de flex-box van de body, hierin komt alle content te staan*/
 #body-flex {
 	display: flex;
@@ -445,61 +460,67 @@ body {
 	flex-direction: row;
 }
 
-/* Individuele opmaak voor het logo, de headers en de navigatiebalk*/
-.logo-Website {
-	background-color: Red;
-}
-
 .website-Title {
-	background-color: Blue;
+	padding: 5px;
+	background-color: #eff9fe;
+	font-size: 1em;
+	border-left: 2px solid #161240;
+	border-top: 2px solid #161240;
+	border-right: 2px solid #161240;
 }
 
 .website-Statement {
-	background-color: grey;
+	background-color: #eff9fe;
+	color: #161240;
+	border-left: 2px solid #161240;
+	border-right: 2px solid #161240;
+	font-size: 0.9em;
+	border-left: 2px solid #161240;
+	border-bottom: 2px solid #161240;
+	border-right: 2px solid #161240;
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style de Navigatie balk */
 .website-Navigatie {
-	background-color: purple;
+	background-color: #161240;
+}
+
+ul {
+	display: none;
 }
 
 
-/* Style voor de layout van het logo, de headers en de navigatie, deze zitten in een flexbox*/
-#logo-Website-Home {
-	flex-basis: 100%;
-	flex-grow: 1;
+/* ====================================================================== */
+/* ====================================================================== */
+#home-Header {
+	flex-basis: 80%;
+	flex-grow: 0;
 	flex-shrink: 0;
-	order: 1;
+	order: 1
 }
 
-#home-Title {
-	flex-basis: 100%;
+#logo-Website-Home {
+	display: none;
+}
+
+#home-Navigatie {
+	flex-basis: 20%;
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 2;
 }
 
-#home-Statement {
-	flex-basis: 100%;
-	flex-grow: 1;
-	flex-shrink: 0;
-	order: 3;
-}
-
 #home-Video {
-	order: 5;
 	display: none;
 }
 
-#home-Navigatie {
-	flex-basis: 100%;
-	flex-grow: 1;
-	flex-shrink: 0;
-	order: 4;
-}
 
-
-
-/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, de artikelen hebben een breedte van 70%, de aside neemt de rest*/
+/* ====================================================================== */
+/* ====================================================================== */
+/* Style voor de aside en de artikelen, deze zitten ook in een flexbox, 
+de artikelen hebben een breedte van 70%, de aside neemt de rest*/
 #home-Aside {
 	flex-basis: 100%;
 	flex-grow: 0;
@@ -508,12 +529,12 @@ body {
 	background-color: #161240;
 	border-radius: 5px;
 	padding: 10px;
-	font-size: 0.6em;
 	margin-top: 5px;
 }
 
 #aside-Header {
 	color: yellow;
+	font-size: 0.75em;
 }
 
 ol{
@@ -526,9 +547,12 @@ ol{
 	width: 100%;
 	background-color: #161240;
 	list-style-type: dotted;
+	font-size: 0.5em;
 }
 
 
+/* ====================================================================== */
+/* ====================================================================== */
 #article-flex {
 	flex-basis: 100%;
 	flex-grow: 0;
@@ -562,7 +586,6 @@ ol{
 
 .img-Articles {
 	width: 100px;
-	float: right;
 	position: relative;
 	margin: 5px;
 	border: 1px solid #161240;
@@ -570,7 +593,8 @@ ol{
 }
 
 
-
+/* ====================================================================== */
+/* ====================================================================== */
 /* Style voor de cookie statement en de footer, deze bevinden zich onderaan de pagina, de cookie statement is een flexbox*/
 #cookie-flex {
 	flex-basis: 40%;
