@@ -9,7 +9,7 @@
 @media screen and (min-width: 1280px){
 /* Style voor de body met eens schermgrootte boven de 1280px */
 body {
-	width: 1000px;
+	width: 80vw;
 	margin: auto;
 	background-color: #7da1d4;
 }
@@ -222,7 +222,7 @@ onderaan de pagina, de cookie statement is een flexbox*/
 @media screen and (max-width: 1279px){
 	/* Style voor de body met eens schermgrootte onder de 1180 px */
 body {
-	width: 500px;
+	width: 80vw;
 	margin: auto;
 	background-color: #7da1d4;
 }
@@ -433,7 +433,7 @@ onderaan de pagina, de cookie statement is een flexbox*/
 @media screen and (max-width: 600px){
 	/* Style voor de body met eens schermgrootte onder de 480px */
 body {
-	width: 200px;
+	width: 80vw;
 	margin: auto;
 	background-color: #7da1d4; 
 }
