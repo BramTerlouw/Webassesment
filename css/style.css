@@ -243,10 +243,6 @@ table.tableizer-table {
 	order: 7;
 }
 
-#aside-eusolar1, #aside-eusolar2, #aside-eusolar3 {
-	background-color: white;
-	height: 100px;
-}
 
 .eusolar-content {
 	border: 1px solid black;
@@ -301,14 +297,117 @@ button {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
+	border: 1px solid black;
 }
 
-#aside-contact1, #aside-contact2, #aside-contact3 {
-	background-color: white;
+.aside-products {
+	width: 100px;
 	height: 100px;
 }
 
+/* ====================================================================== */
+/* ====================================================================== */
+#howsolarworks-main-section {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 5;
+}
 
+#grid-parent {
+	display: grid;
+	width: 80vw;
+	grid-template-columns: 33.3% auto 33.3%;
+	grid-template-rows: repeat(6, 120px);
+	
+}
+
+.grid-articles {
+	width: 100%;
+	border: 1px solid black;
+	background-color: red;
+}
+
+
+#article1 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 5;
+
+}
+
+#article2 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+#article3 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+#article4 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+#article5 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 6;
+}
+
+#article6 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#aside-product1-grid {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#aside-product2-grid {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#aside-product3-grid {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#aside-product1, #aside-product2, #aside-product3 {
+	background-color: white;
+	height: 150px;
+	padding: 5px;
+	background-color: #161240;
+	color: white;
+}
+
+#aside-product1-grid, #aside-product2-grid, #aside-product3-grid {
+	background-color: white;
+	height: 150px;
+	padding: 5px;
+	background-color: #161240;
+	color: white;
+}
 
 
 /* ====================================================================== */
@@ -320,7 +419,7 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 8;
-	margin-top: 5px;
+	margin-top: 50px;
 	color: yellow;
 	background-color: #161240;
 	height: 50px;
@@ -564,11 +663,6 @@ table.tableizer-table {
 	order: 7;
 }
 
-#aside-eusolar1, #aside-eusolar2, #aside-eusolar3 {
-	background-color: white;
-	height: 100px;
-}
-
 .eusolar-content {
 	border: 1px solid black;
 	background-color: white;
@@ -622,11 +716,111 @@ label {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
+	border: 1px solid black;
 }
 
-#aside-contact1, #aside-contact2, #aside-contact3 {
+
+.aside-products {
+	width: 80px;
+	height: 80px;
+}
+
+/* ====================================================================== */
+/* ====================================================================== */
+#howsolarworks-main-section {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 5;
+}
+
+#grid-parent {
+	display: grid;
+	width: 80vw;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(6, 120px);
+	
+}
+
+.grid-articles {
+	width: 100%;
+	border: 1px solid black;
+	background-color: red;
+}
+
+
+#article1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+}
+
+#article2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+#article3 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 5;
+}
+
+#article4 {
+	display: none;
+}
+
+#article5 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+#article6 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#aside-product1-grid {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#aside-product2-grid {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#aside-product3-grid {
+	display: none;
+}
+
+#aside-product1, #aside-product2, #aside-product3 {
 	background-color: white;
-	height: 100px;
+	height: 150px;
+	padding: 5px;
+	background-color: #161240;
+	color: white;
+}
+
+#aside-product1-grid, #aside-product2-grid, #aside-product3-grid {
+	background-color: white;
+	height: 150px;
+	padding: 5px;
+	background-color: #161240;
+	color: white;
 }
 
 /* ====================================================================== */
@@ -638,7 +832,7 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 8;
-	margin-top: 5px;
+	margin-top: 50px;
 	color: yellow;
 	background-color: #161240;
 	height: 50px;
@@ -877,10 +1071,6 @@ table.tableizer-table {
 	order: 6;
 }
 
-#aside-eusolar1, #aside-eusolar2, #aside-eusolar3 {
-	background-color: white;
-	height: 100px;
-}
 
 .eusolar-content {
 	border: 1px solid black;
@@ -931,13 +1121,112 @@ button {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
+	border: 1px solid black;
 }
 
-#aside-contact1, #aside-contact2, #aside-contact3 {
+.aside-products {
+	width: 60px;
+	height: 60px;
+}
+
+/* ====================================================================== */
+/* ====================================================================== */
+#howsolarworks-main-section {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	order: 5;
+}
+
+#grid-parent {
+	display: grid;
+	width: 80vw;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(7, 120px);
+	
+}
+
+.grid-articles {
+	width: 100%;
+	border: 1px solid black;
+	background-color: red;
+}
+
+
+#article1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+}
+
+#article2 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+#article3 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+#article4 {
+	display: none;
+}
+
+#article5 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+#article6 {
+	display: none;
+}
+
+#aside-product1-grid {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 5;
+	grid-row-end: 6;
+}
+
+#aside-product2-grid {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+#aside-product3-grid {
+	display: initial;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#aside-product1, #aside-product2, #aside-product3 {
 	background-color: white;
-	height: 100px;
+	height: 150px;
+	padding: 5px;
+	background-color: #161240;
+	color: white;
 }
 
+#aside-product1-grid, #aside-product2-grid, #aside-product3-grid {
+	background-color: white;
+	height: 150px;
+	padding: 5px;
+	background-color: #161240;
+	color: white;
+}
 
 /* ====================================================================== */
 /* ====================================================================== */
@@ -947,7 +1236,7 @@ button {
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 8;
-	margin-top: 5px;
+	margin-top: 50px;
 	color: yellow;
 	background-color: #161240;
 	height: 50px;
