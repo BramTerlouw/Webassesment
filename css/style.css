@@ -897,7 +897,7 @@ button {
 	width: 80vw;
 	margin-top: 10px;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: repeat(6, 140px);
+	grid-template-rows: repeat(6, 155px);
 	
 }
 
@@ -1127,7 +1127,7 @@ svg {
 /* ====================================================================== */
 #home-Header {
 	flex-basis: 80%;
-	flex-grow: 0;
+	flex-grow: 1;
 	flex-shrink: 0;
 	order: 1
 }
