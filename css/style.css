@@ -9,7 +9,6 @@
 
 .checkbtn {
 	font-size: 32px;
-	color: white;
 	float: right;
 	margin-right: 15px;
 	cursor: pointer;
@@ -20,6 +19,10 @@
 	display: none;
 }
 
+p::first-letter {
+	font-size: 150%;
+}
+
 /* ====================================================================== */
 /* ====================================================================== */
 @media screen and (min-width: 1280px){
@@ -28,6 +31,7 @@ body {
 	width: 80vw;
 	margin: auto;
 	background-color: #7da1d4;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #body-flex {
@@ -41,11 +45,15 @@ body {
 
 /* Individuele opmaak voor het logo, de headers*/
 .logo-Website {
-	background-color: #eff9fe;
+	width: 75px;
+	height: 75px;
+	float: right;
+	z-index: 9990;
 }
 
 .website-Title {
 	padding: 5px;
+	word-spacing: 5px;
 	border-left: 2px solid #161240;
 	border-top: 2px solid #161240;
 	border-right: 2px solid #161240;
@@ -56,6 +64,8 @@ body {
 .website-Statement {
 	background-color: #eff9fe;
 	color: #161240;
+	padding: 5px;
+	word-spacing: 5px;
 	border-left: 2px solid #161240;
 	border-right: 2px solid #161240;
 }
@@ -79,18 +89,19 @@ ul {
 li {
 	float: left;
 	background-color: #161240;
-	color: white;
 }
 
 li a {
 	display: block;
 	padding: 10px;
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 li a:hover {
-	color: yellow;
+	color: #ffff00;
 }
 
 /* ====================================================================== */
@@ -131,11 +142,15 @@ de navigatie, deze zitten in een flexbox*/
 
 #home-Video {
 	flex-basis: 100%;
-	flex-grow: ;
-	flex-shrink: ;
+	flex-grow: 0;
+	flex-shrink: 0;
 	order: 5;
-	border: 1px solid black;
 	margin: 5px;
+}
+
+.website-Video {
+	width: 60vw;
+	height: 60vh;
 }
 
 
@@ -154,7 +169,7 @@ de artikelen hebben een breedte van 70%, de aside neemt de rest*/
 }
 
 #aside-Header {
-	color: yellow;
+	color: #ffff00;
 }
 
 ol{
@@ -167,6 +182,7 @@ ol{
 	width: 100%;
 	background-color: #161240;
 	list-style-type: dotted;
+	line-height: 2;
 }
 
 
@@ -182,7 +198,8 @@ ol{
 #home-Article1, #home-Article2, #home-Article3 {
 	padding: 5px;
 	margin: 5px;
-	border: 2px solid black;
+	border: solid #000000;
+	border-width: 2px;
 	border-radius: 5px;
 	background-color: #eff9fe;
 }
@@ -193,11 +210,13 @@ ol{
 
 .img-Articles {
 	width: 100px;
+}
+
+.index-figures {
+	width: 100px;
 	float: right;
 	position: relative;
-	margin: 5px;
-	border: 1px solid #161240;
-	border-radius: 5px;
+	text-align: center;
 }
 
 
@@ -207,8 +226,8 @@ ol{
 /* ====================================================================== */
 
 #article-eusolar {
-	flex-basis: 100%;
-	flex-grow: 1;
+	flex-basis: 70%;
+	flex-grow: 0;
 	flex-shrink: 0;
 	order: 5;
 }
@@ -221,14 +240,12 @@ ol{
 	background-color: #7da1d4;
 	border: none;
 }
-	
-.eu-table {
-	
-}
 
 .eu-table td {
-	border-top: 1px solid black;
-	border-bottem: 1px solid black;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-style: double;
+	padding: 4px;
 	width: 10vw;
 }
 
@@ -256,16 +273,33 @@ ol{
 }
 
 #aside-eusolar {
-	flex-basis: 30%;
+	flex-basis: 29%;
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
+	margin-left: 1%;
+}
+
+.figure-aside {
+	background-color: #eff9fe;
+	color: black;
+	padding: 5px;
+	text-align: center;
 }
 
 
 .eusolar-content {
-	border: 1px solid black;
-	background-color: white;
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #000000;
+	background-color: #eff9fe;
+}
+
+#table-footer {
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #000000;
+	background-color: #eff9fe;
 }
 
 /* ====================================================================== */
@@ -273,9 +307,15 @@ ol{
 
 #form-information {
 	flex-basis: 100%;
-	flex-grow: 1;
+	flex-grow: 0;
 	flex-shrink: 0;
 	order: 5;
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 1.2em;
+	border: 1px solid #161240;
+	background-color: #eff9fe;
+	
 }
 
 #contact-form {
@@ -283,17 +323,24 @@ ol{
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 6;
+	margin-top: 10px;
 }
 
 fieldset {
 	padding: 10px;
+	border: 2px solid #eff9fe;
+}
+
+legend {
+	font-size: 1.2em;
 }
 
 input {
 	width: 90%;
 	height: 3em;
 	border-radius: 5%;
-	border: 2px solid grey;
+	border: 2px solid;
+	border-color: #161240;
 	border-radius: 10px;
 	padding: 5px;
 	margin-left: 5%;
@@ -309,14 +356,15 @@ button {
 	padding: 5px;
 	margin-left: 5%;
 	margin-top: 5%;
+	border: 2px solid #161240;
 }
 
 #contact-asides {
-	flex-basis: 30%;
+	flex-basis: 29%;
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
-	border: 1px solid black;
+	margin-left: 1%;
 }
 
 .aside-products {
@@ -336,6 +384,7 @@ button {
 #grid-parent {
 	display: grid;
 	width: 80vw;
+	margin-top: 10px;
 	grid-template-columns: 33.3% auto 33.3%;
 	grid-template-rows: repeat(6, 130px);
 	
@@ -343,10 +392,11 @@ button {
 
 .grid-articles {
 	width: 100%;
-	border: 1px solid black;
+	border: 1px solid #000000;
 	background-color: #eff9fe;
 	padding: 5px;
 	font-size: 1em;
+	text-indent: 10px;
 }
 
 
@@ -415,20 +465,24 @@ button {
 }
 
 #aside-product1, #aside-product2, #aside-product3 {
-	background-color: white;
+	background-color: #ffffff;
 	height: 150px;
 	padding: 5px;
 	background-color: #161240;
 	color: white;
+	margin-top: 10px;
 }
 
 #aside-product1-grid, #aside-product2-grid, #aside-product3-grid {
-	background-color: white;
+	background-color: #ffffff;
 	height: 150px;
 	padding: 5px;
 	background-color: #161240;
-	color: white;
+	color: #ffffff;
+	margin-top: 10px;
 }
+
+
 
 
 /* ====================================================================== */
@@ -441,7 +495,8 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	flex-shrink: 0;
 	order: 8;
 	margin-top: 50px;
-	color: yellow;
+	font-family: 'Notable', sans-serif;
+	color: #ffff00;
 	background-color: #161240;
 	height: 50px;
 	padding: 15px;	
@@ -449,10 +504,10 @@ onderaan de pagina, de cookie statement is een flexbox*/
 
 #cookie-flex {
 	width: 20vw;
-	height: 8vh;
+	height: 6vh;
 	position: fixed;
-	top: 92vh;
-	left: 65vw;
+	top: 94vh;
+	left: 70vw;
 	z-index: 9999;
 	background-color: #F04;
 	opacity: 50%;
@@ -475,6 +530,7 @@ body {
 	width: 80vw;
 	margin: auto;
 	background-color: #7da1d4;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #body-flex {
@@ -486,11 +542,15 @@ body {
 /* ====================================================================== */
 /* Individuele opmaak voor het logo, de headers*/
 .logo-Website {
-	background-color: #eff9fe;
+	width: 75px;
+	height: 75px;
+	float: right;
+	z-index: 9990;
 }
 
 .website-Title {
 	padding: 5px;
+	word-spacing: 5px;
 	border-left: 2px solid #161240;
 	border-top: 2px solid #161240;
 	border-right: 2px solid #161240;
@@ -501,6 +561,8 @@ body {
 .website-Statement {
 	background-color: #eff9fe;
 	color: #161240;
+	padding: 5px;
+	word-spacing: 5px;
 	border-left: 2px solid #161240;
 	border-right: 2px solid #161240;
 }
@@ -522,18 +584,20 @@ ul {
 li {
 	float: left;
 	background-color: #161240;
-	color: white;
+	color: #ffffff;
 }
 
 li a {
 	display: block;
 	padding: 10px;
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 li a:hover {
-	color: yellow;
+	color: #ffff00;
 }
 
 /* ====================================================================== */
@@ -574,11 +638,15 @@ de navigatie, deze zitten in een flexbox*/
 
 #home-Video {
 	flex-basis: 100%;
-	flex-grow: ;
-	flex-shrink: ;
+	flex-grow: 0;
+	flex-shrink: 0;
 	order: 5;
-	border: 1px solid black;
 	margin: 5px;
+}
+
+.website-Video {
+	width: 60vw;
+	height: 60vh;
 }
 
 
@@ -597,7 +665,7 @@ de artikelen hebben een breedte van 70%, de aside neemt de rest*/
 }
 
 #aside-Header {
-	color: yellow;
+	color: #ffff00;
 }
 
 ol{
@@ -606,10 +674,11 @@ ol{
 }
 
 .aside-li {
-	color: yellow;
+	color: #ffff00;
 	width: 100%;
 	background-color: #161240;
 	list-style-type: dotted;
+	line-height: 2;
 }
 
 
@@ -625,7 +694,8 @@ ol{
 #home-Article1, #home-Article2, #home-Article3 {
 	padding: 5px;
 	margin: 5px;
-	border: 2px solid black;
+	border: solid #000000;
+	border-width: 2px;
 	border-radius: 5px;
 	background-color: #eff9fe;
 }
@@ -637,11 +707,14 @@ ol{
 
 .img-Articles {
 	width: 100px;
+}
+
+.index-figures {
+	width: 100px;
 	float: left;
 	position: relative;
-	margin: 5px;
-	border: 1px solid #161240;
-	border-radius: 5px;
+	text-align: center;
+	font-size: 0.7em;
 }
 
 /* ====================================================================== */
@@ -662,14 +735,12 @@ ol{
 	background-color: #7da1d4;
 	border: none;
 }
-	
-.eu-table {
-	
-}
 
 .eu-table td {
-	border-top: 1px solid black;
-	border-bottem: 1px solid black;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-style: double;
+	padding: 4px;
 	width: 10vw;
 }
 
@@ -703,9 +774,25 @@ ol{
 	order: 7;
 }
 
+.figure-aside {
+	background-color: #eff9fe;
+	color: #000000;
+	padding: 5px;
+	text-align: center;
+}
+
 .eusolar-content {
-	border: 1px solid black;
-	background-color: white;
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #000000;
+	background-color: #eff9fe;
+}
+
+#table-footer {
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #000000;
+	background-color: #eff9fe;
 }
 
 /* ====================================================================== */
@@ -713,27 +800,40 @@ ol{
 
 #form-information {
 	flex-basis: 100%;
-	flex-grow: 1;
+	flex-grow: 0;
 	flex-shrink: 0;
 	order: 5;
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 1.2em;
+	border: 1px solid #161240;
+	background-color: #eff9fe;
+	
 }
 
 #contact-form {
-	flex-basis: 50%;
+	flex-basis: 70%;
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 6;
+	margin-top: 10px;
 }
 
 fieldset {
 	padding: 10px;
+	border: 2px solid #eff9fe;
+}
+
+legend {
+	font-size: 1.2em;
 }
 
 input {
 	width: 90%;
-	height: 2em;
+	height: 3em;
 	border-radius: 5%;
-	border: 2px solid grey;
+	border: 2px solid;
+	border-color: #161240;
 	border-radius: 10px;
 	padding: 5px;
 	margin-left: 5%;
@@ -744,11 +844,12 @@ label {
 	margin-left: 5%;
 }
 
-#form-button {
+button {
 	width: 30%;
 	padding: 5px;
 	margin-left: 5%;
 	margin-top: 5%;
+	border: 2px solid #161240;
 }
 
 #contact-asides {
@@ -756,7 +857,6 @@ label {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
-	border: 1px solid black;
 }
 
 
@@ -777,6 +877,7 @@ label {
 #grid-parent {
 	display: grid;
 	width: 80vw;
+	margin-top: 10px;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: repeat(6, 140px);
 	
@@ -784,7 +885,7 @@ label {
 
 .grid-articles {
 	width: 100%;
-	border: 1px solid black;
+	border: 1px solid #000000;
 	background-color: #eff9fe;
 	padding: 5px;
 	font-size: 0.9em;
@@ -850,19 +951,21 @@ label {
 }
 
 #aside-product1, #aside-product2, #aside-product3 {
-	background-color: white;
-	height: 150px;
+	background-color: #ffffff;
+	height: 125px;
 	padding: 5px;
 	background-color: #161240;
-	color: white;
+	color: #ffffff;
+	margin-top: 10px;
 }
 
 #aside-product1-grid, #aside-product2-grid, #aside-product3-grid {
-	background-color: white;
-	height: 150px;
+	background-color: #ffffff;
+	height: 125px;
 	padding: 5px;
+	margin-top: 10px;
 	background-color: #161240;
-	color: white;
+	color: #ffffff;
 }
 
 /* ====================================================================== */
@@ -875,7 +978,8 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	flex-shrink: 0;
 	order: 8;
 	margin-top: 50px;
-	color: yellow;
+	font-family: 'Notable', sans-serif;
+	color: #ffff00;
 	background-color: #161240;
 	height: 50px;
 	padding: 15px;	
@@ -883,10 +987,10 @@ onderaan de pagina, de cookie statement is een flexbox*/
 
 #cookie-flex {
 	width: 20vw;
-	height: 8vh;
+	height: 6vh;
 	position: fixed;
-	top: 92vh;
-	left: 65vw;
+	top: 94vh;
+	left: 70vw;
 	z-index: 9999;
 	background-color: #F04;
 	opacity: 50%;
@@ -906,7 +1010,8 @@ onderaan de pagina, de cookie statement is een flexbox*/
 body {
 	width: 80vw;
 	margin: auto;
-	background-color: #7da1d4; 
+	background-color: #7da1d4;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #body-flex {
@@ -929,6 +1034,7 @@ body {
 .website-Statement {
 	background-color: #eff9fe;
 	color: #161240;
+	word-spacing: 2px;
 	border-left: 2px solid #161240;
 	border-right: 2px solid #161240;
 	font-size: 0.9em;
@@ -942,6 +1048,9 @@ body {
 /* Style de Navigatie balk */
 svg {
 	display: initial;
+	fill: #ffffff;
+	width: 35px;
+	height: 35px;
 }
 
 .website-Navigatie {
@@ -971,6 +1080,8 @@ svg {
 	
 	nav ul li a {
 		font-size: 30px;
+		letter-spacing: 5px;
+		text-transform: uppercase;
 	}
 	
 	a {
@@ -978,7 +1089,7 @@ svg {
 	}
 	
 	a:hover {
-		background: red;
+		background: #0089B3;
 	}
 	
 	#check:checked ~ ul {
@@ -1029,7 +1140,7 @@ de artikelen hebben een breedte van 70%, de aside neemt de rest*/
 }
 
 #aside-Header {
-	color: yellow;
+	color: #ffff00;
 	font-size: 0.75em;
 }
 
@@ -1039,11 +1150,12 @@ ol{
 }
 
 .aside-li {
-	color: yellow;
+	color: #ffff00;
 	width: 100%;
 	background-color: #161240;
 	list-style-type: dotted;
 	font-size: 0.5em;
+	line-height: 1.5;
 }
 
 
@@ -1059,22 +1171,28 @@ ol{
 #home-Article1, #home-Article2, #home-Article3 {
 	padding: 5px;
 	margin: 5px;
-	border: 2px solid black;
+	border: solid #000000;
+	border-width: 2px;
 	border-radius: 5px;
 	background-color: #eff9fe;
 }
 
 .article-text {
+	width: 100%;
 	margin: 5px;
 	font-size: 0.5em;
 }
 
 .img-Articles {
+	width: 75px;
+}
+
+.index-figures {
 	width: 100px;
+	float: left;
 	position: relative;
-	margin: 5px;
-	border: 1px solid #161240;
-	border-radius: 5px;
+	text-align: center;
+	font-size: 0.7em;
 }
 /* ====================================================================== */
 /* ====================================================================== */
@@ -1091,15 +1209,12 @@ ol{
 	background-color: #7da1d4;
 	border: none;
 }
-	
-.eu-table {
-	
-}
 
 .eu-table td {
-	border-top: 1px solid black;
-	border-bottem: 1px solid black;
-	font-size: 0.8em;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding: 0;
+	font-size: 0.7em;
 	width: 10vw;
 }
 
@@ -1133,10 +1248,11 @@ ol{
 	order: 6;
 }
 
-
-.eusolar-content {
-	border: 1px solid black;
-	background-color: white;
+#table-footer {
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #000000;
+	background-color: #eff9fe;
 }
 
 /* ====================================================================== */
@@ -1144,25 +1260,42 @@ ol{
 
 #form-information {
 	flex-basis: 100%;
-	flex-grow: 1;
+	flex-grow: 0;
 	flex-shrink: 0;
 	order: 5;
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 1.2em;
+	border: 1px solid #161240;
+	background-color: #eff9fe;
+	
 }
 
 #contact-form {
-	flex-basis: 100%;
+	flex-basis: 70%;
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 6;
+	margin-top: 10px;
 }
 
 fieldset {
 	padding: 10px;
+	border: 2px solid #eff9fe;
+}
+
+legend {
+	font-size: 1.2em;
 }
 
 input {
 	width: 90%;
-	height: 2em;
+	height: 3em;
+	border-radius: 5%;
+	border: 2px solid;
+	border-color: #161240;
+	border-radius: 10px;
+	padding: 5px;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -1176,6 +1309,7 @@ button {
 	padding: 5px;
 	margin-left: 5%;
 	margin-top: 5%;
+	border: 2px solid #161240;
 }
 
 #contact-asides {
@@ -1183,7 +1317,6 @@ button {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: 7;
-	border: 1px solid black;
 }
 
 .aside-products {
@@ -1203,14 +1336,15 @@ button {
 #grid-parent {
 	display: grid;
 	width: 80vw;
+	margin-top: 10px;
 	grid-template-columns: 100%;
-	grid-template-rows: 190px 190px 190px 190px 150px 150px 150px;
+	grid-template-rows: 190px 190px 190px 190px 110px 110px 110px;
 	
 }
 
 .grid-articles {
 	width: 100%;
-	border: 1px solid black;
+	border: 1px solid #000000;
 	background-color: #eff9fe;
 	padding: 5px;
 	font-size: 0.9em;
@@ -1277,19 +1411,19 @@ button {
 }
 
 #aside-product1, #aside-product2, #aside-product3 {
-	background-color: white;
-	height: 150px;
+	background-color: #ffffff;
+	height: 101px;
 	padding: 5px;
 	background-color: #161240;
-	color: white;
+	color: #ffffff;
 }
 
 #aside-product1-grid, #aside-product2-grid, #aside-product3-grid {
-	background-color: white;
-	height: 150px;
+	background-color: #ffffff;
+	height: 101px;
 	padding: 5px;
 	background-color: #161240;
-	color: white;
+	color: #ffffff;
 }
 
 /* ====================================================================== */
@@ -1301,7 +1435,8 @@ button {
 	flex-shrink: 0;
 	order: 8;
 	margin-top: 50px;
-	color: yellow;
+	font-family: 'Notable', sans-serif;
+	color: #ffff00;
 	background-color: #161240;
 	height: 50px;
 	padding: 15px;	
@@ -1309,10 +1444,10 @@ button {
 
 #cookie-flex {
 	width: 20vw;
-	height: 8vh;
+	height: 6vh;
 	position: fixed;
-	top: 92vh;
-	left: 65vw;
+	top: 94vh;
+	left: 70vw;
 	z-index: 9999;
 	background-color: #F04;
 	opacity: 50%;
