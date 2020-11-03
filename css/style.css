@@ -104,6 +104,18 @@ li a:hover {
 	color: #ffff00;
 }
 
+li a:active {
+	color: #000000;
+}
+
+a > span {
+	color: #ff0000;
+}
+
+a + em {
+	color: green;
+}
+
 /* ====================================================================== */
 /* ====================================================================== */
 /* Style voor de layout van het logo, de headers en 
@@ -185,7 +197,6 @@ ol{
 	line-height: 2;
 }
 
-
 /* ====================================================================== */
 /* ====================================================================== */
 #article-flex {
@@ -218,7 +229,6 @@ ol{
 	position: relative;
 	text-align: center;
 }
-
 
 
 
@@ -598,6 +608,14 @@ li a {
 
 li a:hover {
 	color: #ffff00;
+}
+
+a > span {
+	color: #ff0000;
+}
+
+a + em {
+	color: green;
 }
 
 /* ====================================================================== */
@@ -1091,6 +1109,14 @@ svg {
 	a:hover {
 		background: #0089B3;
 	}
+	
+	a > span {
+	color: #ff0000;
+}
+	
+	a + em {
+	color: green;
+}
 	
 	#check:checked ~ ul {
 		left: 0;
