@@ -112,8 +112,8 @@ a > span {
 	color: #ff0000;
 }
 
-a + em {
-	color: green;
+p + p {
+	font-size: 0.9em;
 }
 
 /* ====================================================================== */
@@ -157,12 +157,12 @@ de navigatie, deze zitten in een flexbox*/
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 5;
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .website-Video {
-	width: 60vw;
-	height: 60vh;
+	width: 100%;
 }
 
 
@@ -217,6 +217,7 @@ ol{
 
 .article-text {
 	margin: 5px;
+	width: 80%;
 }
 
 .img-Articles {
@@ -308,8 +309,7 @@ ol{
 #table-footer {
 	margin-top: 5px;
 	padding: 5px;
-	border: 1px solid #000000;
-	background-color: #eff9fe;
+	text-align: center;
 }
 
 /* ====================================================================== */
@@ -509,7 +509,8 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	color: #ffff00;
 	background-color: #161240;
 	height: 50px;
-	padding: 15px;	
+	padding-top: 3px;
+	padding-left: 10px;
 }
 
 #cookie-flex {
@@ -614,8 +615,8 @@ a > span {
 	color: #ff0000;
 }
 
-a + em {
-	color: green;
+p + p {
+	font-size: 0.9em;
 }
 
 /* ====================================================================== */
@@ -659,12 +660,12 @@ de navigatie, deze zitten in een flexbox*/
 	flex-grow: 0;
 	flex-shrink: 0;
 	order: 5;
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .website-Video {
-	width: 60vw;
-	height: 60vh;
+	width: 100%;
 }
 
 
@@ -719,12 +720,13 @@ ol{
 }
 
 .article-text {
-	margin: 5px;
-	font-size: 0.75em;
+	margin-left: 100px;
+	font-size: 0.7em;
+	width: 80%;
 }
 
 .img-Articles {
-	width: 100px;
+	width: 70px;
 }
 
 .index-figures {
@@ -754,12 +756,17 @@ ol{
 	border: none;
 }
 
+.eu-table {
+	margin: auto;
+}
+
 .eu-table td {
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 	border-style: double;
 	padding: 4px;
 	width: 10vw;
+	font-size: 0.8em;
 }
 
 .eu-table td:nth-child(even) {
@@ -782,6 +789,10 @@ ol{
 	display: none;
 }
 .eu-table td:nth-child(2) {
+	display: none;
+}
+
+.t-2012, .t-2013 {
 	display: none;
 }
 
@@ -809,8 +820,7 @@ ol{
 #table-footer {
 	margin-top: 5px;
 	padding: 5px;
-	border: 1px solid #000000;
-	background-color: #eff9fe;
+	text-align: center;
 }
 
 /* ====================================================================== */
@@ -897,7 +907,7 @@ button {
 	width: 80vw;
 	margin-top: 10px;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: repeat(6, 155px);
+	grid-template-rows: repeat(6, 180px);
 	
 }
 
@@ -906,7 +916,7 @@ button {
 	border: 1px solid #000000;
 	background-color: #eff9fe;
 	padding: 5px;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 
 
@@ -1000,7 +1010,8 @@ onderaan de pagina, de cookie statement is een flexbox*/
 	color: #ffff00;
 	background-color: #161240;
 	height: 50px;
-	padding: 15px;	
+	padding-top: 3px;
+	padding-left: 10px;	
 }
 
 #cookie-flex {
@@ -1023,7 +1034,7 @@ onderaan de pagina, de cookie statement is een flexbox*/
 
 /* ====================================================================== */
 /* ====================================================================== */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 479px){
 	/* Style voor de body met eens schermgrootte onder de 480px */
 body {
 	width: 80vw;
@@ -1076,51 +1087,50 @@ svg {
 }
 
 .checkbtn {
-		display: block;
-	}
+	display: block;
+}
 	
-	ul{
-		position: fixed;
-		width: 100%;
-		height: 50vh;
-		background: #161240;
-		top: 48px;
-		left: -1000px;
-		text-align: center;
-		z-index: 9998;
-		
-	}
+ul {
+	position: fixed;
+	width: 100%;
+	height: 50vh;
+	background: #161240;
+	top: 48px;
+	left: -1000px;
+	text-align: center;
+	z-index: 9998;	
+}
 	
-	nav ul li {
-		margin: 20px 0;
-		line-height: 30px;
-	}
+nav ul li {
+	margin: 20px 0;
+	line-height: 30px;
+}
 	
-	nav ul li a {
-		font-size: 30px;
-		letter-spacing: 5px;
-		text-transform: uppercase;
-	}
+nav ul li a {
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
 	
-	a {
-		width: 100vw;
-	}
+a {
+	width: 100vw;
+}
 	
-	a:hover {
-		background: #0089B3;
-	}
+a:hover {
+	background: #0089B3;
+}
 	
-	a > span {
+a > span {
 	color: #ff0000;
 }
 	
-	a + em {
-	color: green;
+p + p {
+	font-size: 0.9em;
 }
 	
-	#check:checked ~ ul {
-		left: 0;
-	}
+#check:checked ~ ul {
+	left: 0;
+}
 
 
 /* ====================================================================== */
@@ -1236,11 +1246,15 @@ ol{
 	border: none;
 }
 
+.eu-table {
+	margin: auto;
+}
+
 .eu-table td {
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
-	padding: 0;
-	font-size: 0.7em;
+	padding: 5px;
+	font-size: 1em;
 	width: 10vw;
 }
 
@@ -1267,6 +1281,10 @@ ol{
 	display: none;
 }
 
+.t-2014, .t-2015 {
+	display: none;
+}
+
 #aside-eusolar {
 	flex-basis: 100%;
 	flex-grow: 1;
@@ -1275,10 +1293,10 @@ ol{
 }
 
 #table-footer {
-	margin-top: 5px;
 	padding: 5px;
-	border: 1px solid #000000;
-	background-color: #eff9fe;
+	background-color: #7da1d4;
+	border: none;
+	text-align: center;
 }
 
 /* ====================================================================== */
@@ -1291,7 +1309,7 @@ ol{
 	order: 5;
 	margin-top: 10px;
 	padding: 5px;
-	font-size: 1.2em;
+	font-size: 1em;
 	border: 1px solid #161240;
 	background-color: #eff9fe;
 	
@@ -1364,7 +1382,7 @@ button {
 	width: 80vw;
 	margin-top: 10px;
 	grid-template-columns: 100%;
-	grid-template-rows: 190px 190px 190px 190px 110px 110px 110px;
+	grid-template-rows: 200px 200px 200px 200px 110px 110px 110px;
 	
 }
 
@@ -1373,7 +1391,7 @@ button {
 	border: 1px solid #000000;
 	background-color: #eff9fe;
 	padding: 5px;
-	font-size: 0.9em;
+	font-size: 0.7em;
 }
 
 
@@ -1465,7 +1483,8 @@ button {
 	color: #ffff00;
 	background-color: #161240;
 	height: 50px;
-	padding: 15px;	
+	padding-top: 3px;
+	padding-left: 10px;
 }
 
 #cookie-flex {
